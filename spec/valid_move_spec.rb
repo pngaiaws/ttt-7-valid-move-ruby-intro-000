@@ -21,7 +21,7 @@ describe './lib/valid_move.rb' do
   end
   context "when it is out of range" do
     let(:index) { 100 }
-    
+
     it 'returns nil or false for a position that is not on the board' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       expect(valid_move?(board, index)).to be_falsey
